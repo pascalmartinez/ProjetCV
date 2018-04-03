@@ -1,0 +1,288 @@
+body
+{
+
+
+}
+
+@media (max-width: 600px)
+ {
+     .tof
+     {
+         width: 200px ;
+         height: 200px;
+         margin-left: 25px;
+     }
+     .h2
+     {
+         text-align: center;
+     }
+ }
+
+
+/*Boutton top*/
+#myBtn
+{
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#myBtn:hover
+{
+  background-color: #2196F3;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3
+{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px)
+{
+    .bgimg-1, .bgimg-2, .bgimg-3
+    {
+        background-attachment: scroll;
+    }
+}
+
+/* 1iere image (bande) */
+.bgimg-1
+{
+    background-image: url('IMG/BgBande.jpeg');
+    min-height: 100%;
+    color: white;
+}
+
+/* Seconde image () */
+.bgimg-2 {
+    background-image: url("IMG/ghost2.jpg");
+    min-height: 400px;
+
+}
+
+/* 3ieme image (Langue) */
+.bgimg-3
+{
+    background-image: url("IMG/BgLang.jpeg");
+    background-position: cover;
+    min-height: 400px;
+}
+/*timeline FORMATIONS*/
+.main-timeline
+{
+    display: inline-flex;
+}
+.timeline
+{
+    padding-right: 50px;
+}
+
+.main-timeline .timeline{
+    text-align: center;
+    padding: 0;
+}
+.main-timeline .timeline-icon{
+    padding: 45px 0 35px;
+    background: #58b25e;
+    border-radius: 0 0 50% 50%;
+}
+.main-timeline .timeline-icon i{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 45px;
+}
+.main-timeline .timeline-content{
+    padding: 0 10px 20px;
+}
+.main-timeline .year{
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+.main-timeline .post{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+.main-timeline .description{
+    font-size: 14px;
+    color: #555;
+}
+.main-timeline .timeline:nth-child(2n) .timeline-icon{
+    padding: 35px 0 45px;
+    border-radius: 50% 50% 0 0;
+}
+.main-timeline .timeline:nth-child(2n) .timeline-content{
+    padding: 20px 10px 0;
+}
+.main-timeline .timeline:nth-child(2n) .timeline-icon{ background: #2196F3; }
+.main-timeline .timeline:nth-child(3n) .timeline-icon{ background: #f44336; }
+.main-timeline .timeline:nth-child(2n) .year{ color: #2196F3; }
+.main-timeline .timeline:nth-child(3n) .year{ color: #f44336; }
+
+@media only screen and (max-width: 990px){
+    .main-timeline .timeline{
+        margin-bottom: 20px;
+    }
+}
+
+/*FIN timeline FORMATIONS*/
+
+.presentation
+{
+    color: white;
+    padding-top: 25px;
+    padding-bottom:50px;
+}
+.situation
+{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom:50px;
+}
+
+.Education
+{
+    padding-top: 25px;
+}
+
+.Languages
+{
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.Expériences
+{
+    padding-top: 25px;
+    padding-bottom:  50px;
+}
+
+.Compétences
+{
+    padding-top: 25px;
+}
+
+.Contact
+{
+    padding-top: 25px;
+    padding-bottom:  50px;
+}
+.Projets
+{
+    padding-top: 25px;
+    color: white;
+}
+
+.fanta
+{
+    color:#2196F3;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.hobbies_fanta
+{
+    flex-wrap: nowrap;
+}
+
+p
+{
+text-align: justify;
+
+}
+.box
+{
+    border:1px solid white;
+}
+.box2
+{
+    border:1px solid black;
+}
+
+.tof
+{
+    border-radius: 100px;
+}
+
+.img-responsive
+{
+ margin: 0 auto;
+}
+
+
+/* mise en forme de la partie skill langues*/
+.barrelangue
+{
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+.skills
+{
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.francais {width: 99%; background-color: #4CAF50;}
+.anglais {width: 60%; background-color: #2196F3;}
+.espagnol {width: 60%; background-color: #f44336;}
+
+.img-thumbnail
+{
+    width: 150px;
+    height: 150px;
+
+}
+
+.jumb
+{
+    background-color:  rgba(207, 206, 204, 0.8);
+    text-align: center;
+
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.Hobbies
+{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.Titre
+{
+    font-family: : impact;
+}
+
+.Message
+{
+    font-family: sans-serif;
+}
+.Mail .Nom
+{
+    font-family: monospace;
+}

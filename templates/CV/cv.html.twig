@@ -1,0 +1,321 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+<div class="bgimg-1">
+      <!-- Navbar full screen -->
+      <div class="w3-fixed-top w3-center ">
+        <div class="w3-bar " id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#home" class="w3-bar-item w3-button">HOME</a>
+          <a href="#Education" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fas fa-graduation-cap fa-2x "></i> FORMATIONS</a>
+          <a href="#Languages" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fas fa-globe fa-2x"></i> LANGUES</a>
+          <a href="#Expériences" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fas fa-archive fa-2x"></i> PARCOURS</a>
+          <a href="#Compétences" class="w3-bar-item w3-button w3-hide-small"><i class=" fanta fas fa-cog fa-spin fa-2x"></i> COMPETENCES</a>
+          <a href="#Contact" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fas fa-address-book fa-2x"></i> CONTACT</a>
+          <a href="#Projets" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fa fa-th fa-2x"></i> PROJETS</a>
+          <a href="#Hobbies" class="w3-bar-item w3-button w3-hide-small"><i class="fanta fa fa-user fa-2x"></i> HOBBIES</a>
+
+        </div>
+
+        <!-- Navbar small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="#Education" class="w3-bar-item w3-button" onclick="toggleFunction()">FORMATIONS</a>
+          <a href="#Languages" class="w3-bar-item w3-button" onclick="toggleFunction()">LANGUES</a>
+          <a href="#Expériences" class="w3-bar-item w3-button" onclick="toggleFunction()">PARCOURS</a>
+          <a href="#Compétences" class="w3-bar-item w3-button" onclick="toggleFunction()">COMPETENCES</a>
+          <a href="#Contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+          <a href="#Projets" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJETS</a>
+          <a href="#Hobbies" class="w3-bar-item w3-button" onclick="toggleFunction()">HOBBIES</a>
+        </div>
+      </div>
+      <!-- Boutton permettant de remonter directement -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+
+        <div class="container-fluid">
+
+            <div class="presentation row" id='presentation'>
+        		<div class="img-responsive center-block ">
+        	 		<img class="tof"  src="../CSS/IMG/img" alt="bibi" width="200" height="200">
+        	        <div class="nom"><h2>Pascal Martinez</h2></div>
+                    <div class="qualite"><h4>Développeur web en formation</h4></div>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+    <div class="bgimg-1 container-fluid">
+            <div class="situation col-md-8 offset-md-2 col-sm-12 row">
+                <div class="col-md-3 offset-md-1 col-sm-12">
+
+                    <h3><i class="fanta fab fa-angellist fa-2x"></i>Challenger</h3>
+                    <p>J'ai toujours eu la faculté de me remettre en question et rechercher de nouveaux
+                    challenges que se soit dans un poste que j'occupe comme celui que je convoite.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 ">
+                    <h3><i class="fanta fas fa-upload fa-2x"></i>Update</h3>
+                    <p>Apprendre de nouvelles notions, un nouveau métier ne me fait absolument pas peur
+                    et jusqu'à aujourd'hui cela m'a beaucoup réussi puisque j'ai évolué dans presque toutes
+                    les sociétés pour qui j'ai travaillé.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 ">
+                    <h3><i class=" fanta fas fa-redo-alt fa-2x"></i>Restart</h3>
+                    <p>Je reprend aujourd'hui activement mes recherches et m'ouvre vers de nouveaux horizons.
+                    Je ne recherche pas la facilité en postulant chez un concurrent direct car cela ne m’intéresse
+                    pas, je veux apprendre, découvrir et vivre une nouvelle expérience.</p>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div class="bgimg-3 container-fluid">
+            <div class="Education col-md-8 offset-md-2 col-sm-12 offset-sm-1" id='Education'>
+                <div class="">
+                <h2><i class="fanta fas fa-graduation-cap fa-2x"></i>Formations</h2>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class=" offset-md-3 offset-sm-1">
+                    <div class="main-timeline">
+                        <div class="col-sm-12 col-md-3 timeline">
+                            <div class="timeline-content">
+                                <div class="year">2001-2003</div>
+                                <div class="post">Bac STT Européen option Commerce Internationnal</div>
+                                <p class="description">
+                                    BAC Science Technique du Tertiaire option Européen et Commerce Internationnal
+                                </p>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 timeline">
+                            <div class="timeline-icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <p class="description">
+                                    Bachelor d'école suppérieure de commerce du groupe ESC BAC +3 Niveau II option Informatique et NTIC
+                                </p>
+                                <div class="post">Bachelor ESC Toulouse</div>
+                                <div class="year">2004-2007</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 timeline">
+                            <div class="timeline-content">
+                                <div class="year">2017-2018</div>
+                                <div class="post">AFORMAC</div>
+                                <p class="description">
+                                    Formation de développeur Web diplomant BAC +2 Niveau III
+                                </p>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="row">
+            <div class="Languages col-md-8 offset-md-2 col-sm-12 offset-sm-1" id="Languages">
+                <div class="">
+                    <h2><i class="fanta fas fa-globe fa-2x"></i>Langues</h2>
+                        <p>Français</p>
+                            <div class="barrelangue" >
+                                <div class="skills francais" id="myBar">99%</div>
+                            </div>
+
+                        <p>Anglais</p>
+                            <div class="barrelangue" >
+                                <div class="skills anglais" id="myBar">60%</div>
+                            </div>
+
+                        <p>Espagnol</p>
+                            <div class="barrelangue">
+                                <div class="skills espagnol" id="myBar">60%</div>
+                            </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <div class="Expériences bgimg-1 row" id="Expériences">
+            <div class= "col-md-8 offset-md-2 col-sm-12">
+                <h2 ><i class="fanta fas fa-archive fa-2x"></i>Mon parcours</h2>
+                <div id="timeline" class="offset-md-3">
+            		<ul id="dates">
+            			<li>
+            				<a href="#2003" class>2003</a>
+            			</li>
+            			<li>
+            				<a href="#2007" class>2007</a>
+            			</li>
+            			<li>
+            				<a href="#2008" class>2008</a>
+            			</li>
+            			<li>
+            				<a href="#2014" class>2014</a>
+            			</li>
+            		</ul>
+            		<ul id="issues">
+            			<li id="2003/2007" >
+            				<h4>2003/2007</h4>
+            				<img src="../CSS/IMG/auchan.png" alt="Logo Auchan"  class="img_timel" width="256" >
+            				<p>Second de rayon Auchan</p>
+            			</li>
+
+            			<li id="2007/2008">
+            				<h4>2007/2008</h4>
+            				<img src="../CSS/IMG/lidl.jpg" alt="Logo Arcelor" class="img_timel" width="256">
+            				<p>Chef magasin Lidl</p>
+            			</li>
+            			<li id="2008/2014">
+            				<h4>2008/2014</h4>
+            				<img src="../CSS/IMG/ArcelorMittal_logo.png" alt="Logo Arcelor" class="img_timel" width="256">
+            				<p>Chef des ventes Arcelor Mittal</p>
+            			</li>
+            			<li id="2014/2017">
+            				<h4>2014/2017</h4>
+            				<img src="../CSS/IMG/mecalux.jpg" alt="Logo mecalux" class="img_timel" width="256">
+            				<p>Technico commercial Mecalux</p>
+            			</li>
+            		</ul>
+            		<div id="grad_left"></div>
+            		<div id="grad_right"></div>
+            		<a href="#" id="next">+</a>
+            		<a href="#" id="prev">-</a>
+            	</div>
+            </div>
+
+        </div>
+        <div class="bgimg-2">
+
+        </div>
+
+
+        <div class="bgimg-1 ">
+            <div class="Compétences col-md-8 offset-md-2 col-sm-12 row" id="Compétences">
+
+                <h2><i class=" fanta fas fa-cog fa-spin fa-2x"></i>Compétences</h2>
+                <div class="pieChart row">
+                    <!-- donuts compétences -->
+                    <div class=" col-md-6 col-sm-10 " id="pieChartvente"></div>
+                    <div class=" col-md-6 col-sm-10" id="pieChartinfo"></div>
+
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+                    <script src="{{asset('Librairy/d3pie.min.js')}}"></script>
+                    <script src="{{asset('Librairy/pieChart.js')}}"></script>
+
+                </div>
+            </div>
+        </div>
+
+            <!--Contact -->
+    <div class="bgimg-3 container-fluid  ">
+        <div class="container">
+            <div class="Contact" id="Contact">
+             <h2><i class="fanta fas fa-address-book fa-2x "></i>Contact</h2>
+                <div class="w3-center ">
+                    <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.5656085431947!2d1.266122606690253!3d45.87999977345665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f93540dc1617d5%3A0x64bb129937371c76!2sAll%C3%A9e+Fran%C3%A7ois+Reichenbach%2C+87280+Limoges!5e0!3m2!1sfr!2sfr!4v1519393003965" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="row">
+                        <div class=" col-8 ">
+                            <a class="fanta col-md-4 col-sm-5" href="callto:+0676776866"><i class="fa fa-phone fa-fw  w3-xlarge "></i> 06 76 77 68 66 </a>
+                            <a class="fanta col-md-4 col-sm-5" href="mailto:pmartinez31140@gmail.com"><i class="fa fa-envelope fa-fw w3-xlarge"></i>pmartinez31140@gmail.com</a>
+                        </div>
+                        <div class="fanta col-4 ">
+                            <a class="fanta col-md-4" href="https://www.linkedin.com/in/pascal-martinez-538878b7/"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a class="fanta col-md-4"  href="https://www.facebook.com/pascal.martinez.79069323/" ><i class="fab fa-facebook fa-2x" ></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                      {{ form_start(form) }}
+                      {{ form_widget(form) }}
+                          <button class="w3-button w3-black w3-round-large" type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVOYER MESSAGE
+                          </button>
+                      {{ form_end(form) }}
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bgimg-2 container-fluid " id="Projets">
+        <div class="col-md-8 offset-md-2 col-sm-12 ">
+            <div class="Projets ">
+                <h2><i class="fanta fab fa-black-tie fa-2x"></i>Projets</h2>
+            </div>
+            <div class="offset-2  row">
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/PONG/index.html">
+                    <img src="projets_def/PONG/Screenshot_PONGILONG.jpg" alt="Pong" class="img-thumbnail">
+                    <h3>Pong</h3>
+                    <p>Une revisite du fameux jeux Pong</p></a>
+                </div>
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/Navimpson/index.php">
+                    <img src="projets_def/Navimpson/Screenshot_navfile.png" alt="NavFiles" class="img-thumbnail">
+                    <h3>NavFiles</h3>
+                    <p>Création d'un explorateur fichier</p></a>
+                </div>
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/Blog-V2.0/index.php">
+                    <img src="projets_def/Blog-V2.0/Screenshot-blog.jpg" alt="Blog" class="img-thumbnail">
+                    <h3>Blog</h3>
+                    <p>Création d'un blog</p></a>
+                </div>
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/meme_generator/index.php">
+                    <img src="projets_def/meme_generator/Screenshot-meme.png" alt="meme" class="img-thumbnail">
+                    <h3>MèmeGenerator</h3>
+                    <p>Création d'un générateur de Mème</p></a>
+                </div>
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/GROUPE_GREGv1.0/index.html">
+                    <img src="projets_def/GROUPE_GREGv1.0/Screenshot_Homepage.jpg" alt="Greg" class="img-thumbnail">
+                    <h3>Template</h3>
+                    <p>Réalisation d'une template en fonction d'un cahier des charges "clients"</p></a>
+                </div>
+                <div class="jumb thumbnail col-md-3 col-sm-10">
+                    <a href="projets_def/wordpress/wordpress/">
+                    <img src="projets_def/wordpress/screenshot.png" alt="Pong" class="img-thumbnail">
+                    <h3>Wordpress</h3>
+                    <p>Création d'une maquette Wordpress FromScratch</p></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="Hobbies bgimg-1 container-fluid" id="Hobbies">
+        <div class="col-md-8 offset-md-2 col-sm-12  ">
+            <h2><i class="fanta far fa-smile fa-2x"></i>Hobbies</h2>
+            <div class="hobbies_fanta row">
+                <div class="fanta col-sm-2 col-md-2 offset-md-3 "><i class="fas fa-film fa-2x"></i></div>
+                <div class="fanta col-sm-2 col-md-2 "><i class="fas fa-plane fa-2x"></i></div>
+                <div class="fanta col-sm-2 col-md-2 "><i class="fas fa-laptop fa-2x"></i></div>
+                <div class="fanta col-sm-2 col-md-2 "><i class="fas fa-gamepad fa-2x"></i></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
