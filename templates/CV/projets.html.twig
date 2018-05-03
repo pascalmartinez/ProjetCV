@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="bgimg-2 container-fluid " id="Projets">
+    <div class="col-md-8 offset-md-2 col-sm-12 ">
+        <div class="Projets ">
+            <h2><i class="fanta fab fa-black-tie fa-2x"></i>Projets</h2>
+        </div>
+        <div class="offset-2  row">
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/PONG/index.html">
+                <img src="projets_def/PONG/Screenshot_PONGILONG.jpg" alt="Pong" class="img-thumbnail">
+                <h3>Pong</h3>
+                <p>Une revisite du fameux jeux Pong</p></a>
+            </div>
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/Navimpson/index.php">
+                <img src="projets_def/Navimpson/Screenshot_navfile.png" alt="NavFiles" class="img-thumbnail">
+                <h3>NavFiles</h3>
+                <p>Création d'un explorateur fichier</p></a>
+            </div>
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/Blog-V2.0/index.php">
+                <img src="projets_def/Blog-V2.0/Screenshot-blog.jpg" alt="Blog" class="img-thumbnail">
+                <h3>Blog</h3>
+                <p>Création d'un blog</p></a>
+            </div>
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/meme_generator/index.php">
+                <img src="projets_def/meme_generator/Screenshot-meme.png" alt="meme" class="img-thumbnail">
+                <h3>MèmeGenerator</h3>
+                <p>Création d'un générateur de Mème</p></a>
+            </div>
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/GROUPE_GREGv1.0/index.html">
+                <img src="projets_def/GROUPE_GREGv1.0/Screenshot_Homepage.jpg" alt="Greg" class="img-thumbnail">
+                <h3>Template</h3>
+                <p>Réalisation d'une template en fonction d'un cahier des charges "clients"</p></a>
+            </div>
+            <div class="jumb thumbnail col-md-3 col-sm-10">
+                <a href="projets_def/wordpress/">
+                <img src="projets_def/wordpress/screenshot.png" alt="Pong" class="img-thumbnail">
+                <h3>Wordpress</h3>
+                <p>Création d'une maquette Wordpress FromScratch</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}
+    <div class="container-fluid footer ">
+        <div class="col-md-8 offset-md-2 col-sm-12  ">
+            <a href="{{ path('cv') }}"><i class="fas fa-home fa-2x fanta"></i>Retour accueil</a>
+        </div>
+
+    </div>
+
+{% endblock %}

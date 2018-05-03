@@ -11,16 +11,28 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use App\Entity\Message;
+use App\Entity\Experiences;
+
 
 class CVController extends Controller
 
 {
     /**
-     * @Route("/", name="cv")
+     * @Route("/", name="cv",requirements={"page"="\d+"})
      */
 
      public function new(Request $request, \Swift_Mailer $mailer)
     {
+        //get files database Experience
+        $repository_Exp = $this->getDoctrine()->getRepository(Experiences::class);
+        $experiences = $repository_Exp->findAll();
+
+        // //get files database formations
+        // $repository_Forma = $this->getDoctrine()->getRepository(Formations::class);
+        // $formations = $repository_Forma->findAll();
+
+
+
        // creates a task and gives it some dummy data for this example
        $task = new Message();
 
@@ -57,6 +69,7 @@ class CVController extends Controller
                 ),
                'text/html'
            );
+           $this->push($contactFormNom. " : " . $contactFormTitre, $contactFormMessage);
            $mailer->send($message);
            return $this->redirect($request->getUri());
            $this->addFlash("success", "Votre message a bien été prit en compte, je vous répondrai dès que possible");
@@ -69,9 +82,40 @@ class CVController extends Controller
 
        return $this->render('CV/cv.html.twig', array(
            'form' => $form->createView(),
-       ));
-    }
+           'exp'  => $experiences,
+
+           // 'forma'=> $formations
+              ));
+   }
 
 
+//Fonction messagerie instantannée PushBullet
+   public function push($title, $body)
+   {
+       $headers = array(
+           'Access-Token: o.olH1Klh2Fobe7iKPFXAYbOAvpO1iKr8o',
+           'Content-Type: application/json'
+       );
+
+       $post = array('type' => 'note' ,
+                       'title'=> $title,
+                       'body'=> $body
+                   );
+
+       $post = json_encode($post);
+
+       $ch = curl_init("https://api.pushbullet.com/v2/pushes");
+
+       curl_setopt($ch, CURLOPT_HTTPHEADER, $headers); //=header
+       curl_setopt($ch,CURLOPT_POST, 1);// réaliser la méthode
+       curl_setopt($ch,CURLOPT_POSTFIELDS,$post); // contenu du post
+       // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //retour du message d'erreur
+       curl_setopt($ch,CURLOPT_CONNECTTIMEOUT ,3); //fin de session en cas de problème
+       curl_setopt($ch,CURLOPT_TIMEOUT, 20);//fin de la requete en cas de problème
+
+       curl_exec($ch); //execute la requete et envoi le message
+       curl_close($ch); //ferme la connection
+
+   }
 
 }

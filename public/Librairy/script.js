@@ -49,4 +49,40 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+}
+
+//script text projetsTexte
+function typeEffect(element, speed) {
+	var text = $(element).text();
+	$(element).html('');
+
+	var i = 0;
+	var timer = setInterval(function() {
+					if (i < text.length) {
+						$(element).append(text.charAt(i));
+						i++;
+					} else {
+						clearInterval(timer);
+					}
+				}, speed);
+}
+
+$( document ).ready(function() {
+  var speed = 75;
+  var delay = $('#projetsTitre').text().length * speed + speed;
+  typeEffect($('#projetsTitre'), speed);
+  setTimeout(function(){
+    $('#projetsTexte').css('display', 'inline-block');
+    typeEffect($('#projetsTexte'), speed);
+  }, delay);
+});
+
+$( document ).ready(function() {
+  var speed = 75;
+  var delay = $('#CVdownTitre').text().length * speed + speed;
+  typeEffect($('#CVdownTitre'), speed);
+  setTimeout(function(){
+    $('#CVdown').css('display', 'inline-block');
+    typeEffect($('#CVdown'), speed);
+  }, delay);
+});
