@@ -1,8 +1,4 @@
-body
-{
 
-
-}
 
 @media (max-width: 700px)
  {
@@ -82,7 +78,7 @@ body
     }
 }
 
-/* 1iere image (bande) */
+/* 1iere image (Présentation/PARCOURS/COMPETENCES/HOBBIES) */
 .bgimg-1
 {
     background-image: url('IMG/BgBande.jpeg');
@@ -90,17 +86,18 @@ body
     color: white;
 }
 
-/* Seconde image () */
+/* Seconde image (projets/Download CV) */
 .bgimg-2 {
     background-image: url("IMG/ghost2.jpg");
     min-height: 400px;
 
 }
 
-/* 3ieme image (Langue) */
+/* 3ieme image (Formation/Langue/Contacts) */
 .bgimg-3
 {
-    background-image: url("IMG/BgLang.jpeg");
+    background-image: url("IMG/abstract3.jpg");
+
     background-position: cover;
     min-height: 400px;
 }
@@ -146,7 +143,7 @@ body
     color: #000;
 }
 .main-timeline .description{
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 }
 .main-timeline .timeline:nth-child(2n) .timeline-icon{
@@ -518,7 +515,7 @@ position:absolute;
 .CVdownTitre {
   text-transform: uppercase;
   letter-spacing: 1pt;
-  font-size: 30pt;
+  font-size: 20pt;
   margin-bottom: 15px;
 }
 
@@ -590,7 +587,7 @@ position:absolute;
 .projetsTitre {
   text-transform: uppercase;
   letter-spacing: 1pt;
-  font-size: 30pt;
+  font-size: 20pt;
   margin-bottom: 15px;
 }
 
