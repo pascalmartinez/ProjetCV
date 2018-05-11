@@ -213,6 +213,7 @@
     color: white;
 }
 
+/* CSS des logos fontawesome */
 .fanta
 {
     color:#2196F3;
@@ -225,12 +226,14 @@
 {
     flex-wrap: nowrap;
 }
-
+/* fin fontawesome */
 p
 {
 text-align: justify;
 
 }
+
+/* classe de test pour responsive */
 .box
 {
     border:1px solid white;
@@ -239,6 +242,8 @@ text-align: justify;
 {
     border:1px solid black;
 }
+
+/* END responsive */
 
 /*Photo profil*/
 .tof
@@ -501,7 +506,7 @@ position:absolute;
 {
     font-family: monospace;
 }
-8/*fin de formulaire*/
+/*fin de formulaire*/
 /*Télécharger CV*/
 
 .cv, html {
@@ -568,11 +573,13 @@ position:absolute;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5b6178;
+    margin-bottom: 5px;
 }
 
 .boutonCV:active {
 	position:relative;
 	top:1px;
+
 }
 
 /* zone projets */
